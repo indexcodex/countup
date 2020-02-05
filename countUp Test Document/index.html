@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='IXCX_CountUp.js'></script>
+    <title>countUp Test Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            border: 2px solid green;
+        }
+
+        h1 {
+            font-size: 5em;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: 1s;
+        }
+
+        button {
+            padding: 16px;
+            margin-top: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>SECTION 1</h1>
+
+        <button>Count Up!</button>
+    </div>
+
+    <script>
+        let h1 = document.querySelector('h1');
+        let btn = document.querySelector('button');
+        let counter = new IXCX_CountUp({
+            target: h1,
+            end: 87945,
+            loopDelay: 50,
+            loopAmount: 20,
+        });
+
+        function countUpCallback() {
+            counter.start();
+        }
+        btn.addEventListener('click', countUpCallback);
+    </script>
+</body>
+
+</html>
