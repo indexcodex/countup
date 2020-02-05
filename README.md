@@ -2,10 +2,10 @@
 IXCX_CountUp is a very lightweight (883bytes!) vanilla javascript library that easily counts an integer incrementally!
 
 # How to use
-1. Add the script to your document  
+1. Add the script inside the head tag  
 `<script src="assets/IXCX_CountUp.js"></script>`  
 2. Create an IXCX_CountUp object  
-`let counter = new IXCX_CountUp({target: null, end: 100, loopDelay: 50, loopAmount: null})`  
+`let counter = new IXCX_CountUp({target: null, end: 100, loopDelay: 50, loopAmount: null});`  
 3. Fill in the following data via the constructor  
    **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) target (required) :**  `Your target element via getElementById, querySelector, etc..`  
    **![#00FA9A](https://placehold.it/15/00FA9A/000000?text=+) end (default 100) :**  `The number you want to count up to`  
