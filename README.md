@@ -20,5 +20,5 @@ IXCX_CountUp is a very lightweight (883bytes!) vanilla javascript library that e
      loopAmount: 20,  
   });
   ```
-4. Call start() method  
+4. Call start() method or bind it to an event  
 `counter.start();`
